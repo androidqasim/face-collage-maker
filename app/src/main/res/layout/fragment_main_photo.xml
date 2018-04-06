@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/photoButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_home_height"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_create_photo_button"
+        android:drawableLeft="@drawable/ic_photo"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/create_from_photo"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/frameButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_home_height"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_create_photo_button"
+        android:drawableLeft="@drawable/ic_frame_white"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/create_from_frame"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/imageTemplateButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_home_height"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_create_photo_button"
+        android:drawableLeft="@drawable/ic_template"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="@string/create_from_template"
+        android:textColor="@android:color/white"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:id="@+id/appLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_create_photo_button">
+    </RelativeLayout>
+</LinearLayout>

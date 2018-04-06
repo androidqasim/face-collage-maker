@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/normalLayout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/thumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_ic_effect_normal"/>
+
+        <View
+            android:id="@+id/selectedView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:background="@drawable/photo_editor_bg_password"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_horizontal"
+        android:text="@string/photo_editor_effect"
+        android:textColor="@color/photo_editor_normal_text_main_topbar"
+        android:textSize="@dimen/photo_editor_menu_text_size"/>
+</LinearLayout>

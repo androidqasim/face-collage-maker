@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+        <!-- Customize your theme here. -->
+        <!-- see https://developer.android.com/training/material/theme.html -->
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="android:colorAccent">@color/accentColor</item>
+        <item name="android:textColorPrimary">@color/textColor</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+        <item name="android:actionMenuTextColor">@color/menu_item_text</item>
+        <item name="android:colorControlActivated">@color/text_hint</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/nav_toolbar</item>
+    </style>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/leftView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/leftThumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_btn_rotate_left"/>
+
+        <TextView
+            android:id="@+id/leftNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_left"
+            android:textColor="@color/photo_editor_bottom_store_text_color"
+            android:textSize="@dimen/photo_editor_menu_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/rightThumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_btn_rotate_right"/>
+
+        <TextView
+            android:id="@+id/rightNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_right"
+            android:textColor="@color/photo_editor_bottom_store_text_color"
+            android:textSize="@dimen/photo_editor_menu_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/verView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/verThumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_btn_flip_vertical"/>
+
+        <TextView
+            android:id="@+id/verNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_vertical"
+            android:textColor="@color/photo_editor_bottom_store_text_color"
+            android:textSize="@dimen/photo_editor_menu_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/horView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/horThumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_btn_flip_horizontal"/>
+
+        <TextView
+            android:id="@+id/horNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_horizontal"
+            android:textColor="@color/photo_editor_bottom_store_text_color"
+            android:textSize="@dimen/photo_editor_menu_text_size"/>
+    </LinearLayout>
+</LinearLayout>

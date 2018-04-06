@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/photo_editor_bg_store_item"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/thumbnailView"
+            android:layout_width="@dimen/photo_editor_store_item_thumbnail_size"
+            android:layout_height="@dimen/photo_editor_store_item_thumbnail_size"
+            android:layout_marginBottom="@dimen/photo_editor_store_item_bottom_margin"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo_editor_ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titleView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Endwar"
+                    android:textColor="#7B8085"
+                    android:textSize="@dimen/photo_editor_store_item_title_size"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/permissionView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="top"
+                    android:text="VIP"
+                    android:textColor="#ABB2BA"
+                    android:textSize="@dimen/photo_editor_store_item_description_text_size"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/priceView"
+                    android:layout_width="@dimen/photo_editor_store_item_price_view_with"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/photo_editor_bg_price_view_normal"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="0.99$"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/photo_editor_store_item_title_size"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/itemCountView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="10 filters"
+                android:textColor="#ABB2BA"
+                android:textSize="@dimen/photo_editor_store_item_item_count_title_size"/>
+
+            <TextView
+                android:id="@+id/descriptionView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Dawn of magic brings you to edge of..."
+                android:textColor="#999FA5"
+                android:textSize="@dimen/photo_editor_store_item_description_text_size"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

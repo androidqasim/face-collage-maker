@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/photo_editor_bg_mask"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/leftView"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/photo_editor_bg_mask"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/maskView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <dauroi.photoeditor.view.CaptionImageView
+                android:id="@+id/captionView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/topCaptionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/photo_editor_caption_bg"
+                android:gravity="center"
+                android:hint="@string/photo_editor_enter_top_caption"
+                android:textColorHint="@color/photo_editor_meme_hint"
+                android:imeOptions="actionNext"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/centerCaptionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:background="@color/photo_editor_caption_bg"
+                android:gravity="center"
+                android:hint="@string/photo_editor_enter_center_caption"
+                android:textColorHint="@color/photo_editor_meme_hint"
+                android:imeOptions="actionDone"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/bottomCaptionView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:background="@color/photo_editor_caption_bg"
+                android:gravity="center"
+                android:hint="@string/photo_editor_enter_bottom_caption"
+                android:textColorHint="@color/photo_editor_meme_hint"
+                android:imeOptions="actionDone"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/rightView"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/photo_editor_bg_mask"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/photo_editor_bg_mask"
+        android:visibility="gone" />
+
+</LinearLayout>

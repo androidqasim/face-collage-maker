@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <dauroi.photoeditor.horizontalListView.widget.HListView
+        android:id="@+id/hListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/photo_editor_bg_action_bar"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent" />
+
+</RelativeLayout>

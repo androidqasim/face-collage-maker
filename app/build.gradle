@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        applicationId "com.codetho.photocollage"
+        minSdkVersion 15
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+}
+
+dependencies {
+    compile 'com.tonicartos:superslim:0.4.13'
+    compile project(':photoEditor')
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile "com.daimajia.swipelayout:library:1.2.0@aar"
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile('com.github.clockbyte:admobadapter:1.3.2'){
+        exclude group: 'com.android.support'
+        exclude group: 'com.google.firebase'
+        exclude group: 'org.mockito'
+        exclude group: 'org.powermock'
+        exclude group: 'junit'
+    }
+}
+apply plugin: 'com.google.gms.google-services'

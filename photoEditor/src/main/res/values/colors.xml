@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="photo_editor_grid_state_pressed">#1Affffff</color>
+    <color name="photo_editor_grid_state_focused">#80000000</color>
+    <color name="photo_editor_menu_color">#009531</color>
+    <color name="photo_editor_actionbar_text">#7B8085</color>
+    <color name="photo_editor_bg_action_bar">#a6a6a6</color>
+    <color name="photo_editor_android_green">#FFA4C639</color>
+    <color name="photo_editor_honeycombish_blue">#FF58BAED</color>
+    <color name="photo_editor_soft_grey">#FF777777</color>
+    <color name="photo_editor_background">#FFEFEFEF</color>
+    <color name="photo_editor_slide_menu_text">#ffffff</color>
+    <color name="photo_editor_red_color">#ff0000</color>
+    <color name="photo_editor_blue_color">#0000e0</color>
+    <color name="photo_editor_text_color_popup">#ffffff</color>
+    <color name="photo_editor_bg_popup">#009531</color>
+    <color name="photo_editor_normal_text_main_topbar">#271B54</color>
+    <color name="photo_editor_bottom_bg_view_topbar">#FFF200</color>
+    <color name="photo_editor_selected_text_main_topbar">#F1B438</color>
+    <color name="photo_editor_mask_color">#88000000</color>
+    <color name="photo_editor_bg_mask">#88000000</color>
+    <color name="photo_editor_bg_full_screen_dialog">#40000000</color>
+    <color name="photo_editor_separate_color">#B7B7B7</color>
+	<color name="photo_editor_caption_bg">#a0ffffff</color>
+	<color name="photo_editor_price_view_use">#64C88C</color>
+	<color name="photo_editor_price_view_normal">#E8CC44</color>
+	<color name="photo_editor_album_top_bar">#101010</color>
+    <color name="photo_editor_meme_hint">#444444</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/photo_editor_menu_item_package_height"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:visibility="visible" >
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/photo_editor_app_name"
+        android:src="@drawable/photo_editor_btn_row_back"
+        android:visibility="gone" />
+
+    <dauroi.photoeditor.horizontalListView.widget.HListView
+        android:id="@+id/bottomListView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_menu_item_package_height"
+        android:layout_gravity="bottom"
+        android:layout_toRightOf="@+id/backButton"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+</RelativeLayout>

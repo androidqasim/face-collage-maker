@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_top_bar_height"
+        android:background="@drawable/photo_editor_bg_topbar">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/photo_editor_top_back_button_size"
+            android:layout_height="@dimen/photo_editor_top_back_button_size"
+            android:layout_marginTop="@dimen/photo_editor_btn_done_margin"
+            android:src="@drawable/photo_editor_btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/photo_editor_center_text_top_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_view_image"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/actionLayout"
+        android:layout_below="@+id/topLayout"
+        android:layout_centerInParent="true"
+        android:layout_margin="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_top_bar_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/photo_editor_bg_view_image_bottom">
+
+        <ImageView
+            android:id="@+id/shareView"
+            android:layout_width="@dimen/photo_editor_btn_store_size"
+            android:layout_height="@dimen/photo_editor_btn_store_size"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/photo_editor_btn_share"/>
+
+        <ImageView
+            android:id="@+id/editView"
+            android:layout_width="@dimen/photo_editor_btn_store_size"
+            android:layout_height="@dimen/photo_editor_btn_store_size"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/photo_editor_btn_edit"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/deleteView"
+            android:layout_width="@dimen/photo_editor_btn_store_size"
+            android:layout_height="@dimen/photo_editor_btn_store_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/photo_editor_btn_delete"/>
+    </RelativeLayout>
+
+</RelativeLayout>

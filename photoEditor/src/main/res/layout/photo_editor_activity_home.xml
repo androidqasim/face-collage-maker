@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                tools:context="dauroi.photoeditor.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_top_bar_height"
+        android:background="@drawable/photo_editor_bg_topbar">
+
+        <FrameLayout
+            android:id="@+id/storeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/photo_editor_btn_store_top_margin">
+
+            <ImageView
+                android:id="@+id/storeView"
+                android:layout_width="@dimen/photo_editor_btn_store_size"
+                android:layout_height="@dimen/photo_editor_btn_store_size"
+                android:src="@drawable/photo_editor_btn_store"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/newItemView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right"
+                android:background="@drawable/photo_editor_new_app_bg"
+                android:gravity="center"
+                android:text="N"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/photo_editor_center_text_top_margin"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_home"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/photo_editor_top_title_text_size"/>
+
+        <ImageView
+            android:id="@+id/addImageButton"
+            android:layout_width="@dimen/photo_editor_btn_add_size"
+            android:layout_height="@dimen/photo_editor_btn_add_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="@dimen/photo_editor_btn_store_top_margin"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:src="@drawable/photo_editor_btn_add"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/topLayout"
+        android:layout_margin="10dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp">
+    </GridView>
+
+    <FrameLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_top_bar_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/photo_editor_btn_store_top_margin"
+        android:background="@drawable/photo_editor_bg_bottombar">
+
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/photo_editor_bottom_back_button_margin"
+            android:layout_marginRight="@dimen/photo_editor_bottom_back_button_margin"
+            android:text="@string/photo_editor_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/photo_editor_back_text_size"/>
+    </FrameLayout>
+</RelativeLayout>

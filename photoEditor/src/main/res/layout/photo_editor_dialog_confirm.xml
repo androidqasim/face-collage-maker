@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#202020"
+              android:layout_gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:singleLine="true"
+        android:text="@string/photo_editor_app_name"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/contentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Are you sure you want to delete PageSizes 1.pdf?"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:text="@string/photo_editor_ok"
+            android:textColor="#E9BCA1"
+            android:textSize="@dimen/photo_editor_title_text_size"/>
+
+        <TextView
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@+id/okButton"
+            android:padding="10dp"
+            android:text="@string/photo_editor_cancel"
+            android:textColor="#E9BCA1"
+            android:textSize="@dimen/photo_editor_title_text_size"/>
+    </RelativeLayout>
+
+</LinearLayout>

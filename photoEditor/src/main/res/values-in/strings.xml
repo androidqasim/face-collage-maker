@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="photo_editor_confirm_uninstall">Are you sure you want to uninstall this package?</string>
+</resources>

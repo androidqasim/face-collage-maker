@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent" >
+
+    <dauroi.photoeditor.view.DrawableCropImageView
+        android:id="@+id/drawbleCropView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/clearImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/photo_editor"
+        android:src="@drawable/photo_editor_ic_clear" />
+
+</FrameLayout>

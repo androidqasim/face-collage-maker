@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="photo_editor_activity_horizontal_margin">16dp</dimen>
+    <dimen name="photo_editor_activity_vertical_margin">16dp</dimen>
+    <dimen name="photo_editor_finger_width">15dp</dimen>
+    <dimen name="photo_editor_min_linear_focus_radius">20dp</dimen>
+    <dimen name="photo_editor_focus_stroke_width">2dp</dimen>
+    <dimen name="photo_editor_max_finger_width">20dp</dimen>
+    <dimen name="photo_editor_min_finger_width">5dp</dimen>
+    <dimen name="photo_editor_dialog_paint_size">300dp</dimen>
+    <dimen name="photo_editor_text_default_size">20sp</dimen>
+    <dimen name="photo_editor_text_min_size">13sp</dimen>
+    <dimen name="photo_editor_text_max_size">26sp</dimen>
+    <dimen name="photo_editor_top_margin_caption">8dp</dimen>
+    <dimen name="photo_editor_bottom_margin_caption">16dp</dimen>
+    <dimen name="photo_editor_left_right_margin_caption">8dp</dimen>
+    <dimen name="photo_editor_stroke_width">2.5dp</dimen>
+    <dimen name="photo_editor_effect_thumbnail_height">40dp</dimen>
+    <dimen name="photo_editor_bottom_menu_height">90dp</dimen>
+    <dimen name="photo_editor_topbar_height">90dp</dimen>
+    <dimen name="photo_editor_menu_item_size">32dp</dimen>
+    <dimen name="photo_editor_menu_thumbnail_package_size">36dp</dimen>
+    <dimen name="photo_editor_menu_item_package_height">65dp</dimen>
+    <dimen name="photo_editor_menu_add_size">25dp</dimen>
+    <dimen name="photo_editor_menu_text_size">12sp</dimen>
+    <dimen name="photo_editor_store_slide_height">130dp</dimen>
+    <dimen name="photo_editor_store_item_thumbnail_size">70dp</dimen>
+    <dimen name="photo_editor_store_item_bottom_margin">40dp</dimen>
+    <dimen name="photo_editor_store_item_title_size">18sp</dimen>
+    <dimen name="photo_editor_store_item_item_count_title_size">14sp</dimen>
+    <dimen name="photo_editor_store_item_description_text_size">16sp</dimen>
+    <dimen name="photo_editor_store_item_price_view_with">70dp</dimen>
+    <dimen name="photo_editor_normal_topbar_height">55dp</dimen>
+    <dimen name="photo_editor_bottom_menu_item_margin">7dp</dimen>
+    <dimen name="photo_editor_thumbnail_height">90dp</dimen>
+    <dimen name="photo_editor_top_bar_height">90dp</dimen>
+    <dimen name="photo_editor_option_height">65dp</dimen>
+    <dimen name="photo_editor_center_text_top_margin">20dp</dimen>
+    <dimen name="photo_editor_btn_store_top_margin">12dp</dimen>
+    <dimen name="photo_editor_btn_done_margin">10dp</dimen>
+    <dimen name="photo_editor_btn_store_size">32dp</dimen>
+    <dimen name="photo_editor_back_text_size">24sp</dimen>
+    <dimen name="photo_editor_top_title_text_size">24sp</dimen>
+    <dimen name="photo_editor_bottom_back_button_margin">15dp</dimen>
+    <dimen name="photo_editor_top_back_button_size">36dp</dimen>
+    <dimen name="photo_editor_title_text_size">18sp</dimen>
+    <dimen name="photo_editor_toolbar_title">22sp</dimen>
+    <dimen name="photo_editor_description_text_size">14sp</dimen>
+    <dimen name="photo_editor_btn_add_size">40dp</dimen>
+</resources>

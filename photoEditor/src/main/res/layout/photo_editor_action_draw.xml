@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="bottom|center_horizontal"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/colorView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/colorThumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_btn_draw_color"/>
+
+        <TextView
+            android:id="@+id/colorNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_color"
+            android:textColor="@color/photo_editor_bottom_store_text_color"
+            android:textSize="@dimen/photo_editor_menu_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sizeView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/sizeThumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_btn_resize"/>
+
+        <TextView
+            android:id="@+id/sizeNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_resize"
+            android:textColor="@color/photo_editor_bottom_store_text_color"
+            android:textSize="@dimen/photo_editor_menu_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clearView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/horThumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_btn_clear"/>
+
+        <TextView
+            android:id="@+id/horNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_clear"
+            android:textColor="@color/photo_editor_bottom_store_text_color"
+            android:textSize="@dimen/photo_editor_menu_text_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/eraseView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/eraseThumbnailView"
+            android:layout_width="@dimen/photo_editor_menu_item_size"
+            android:layout_height="@dimen/photo_editor_menu_item_size"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/photo_editor_app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/photo_editor_ic_eraser_normal"/>
+
+        <TextView
+            android:id="@+id/eraseNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/photo_editor_erase"
+            android:textColor="@color/photo_editor_normal_text_main_topbar"
+            android:textSize="@dimen/photo_editor_menu_text_size"/>
+    </LinearLayout>
+</LinearLayout>

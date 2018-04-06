@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/photo_editor_bg_action_bar">
+
+    <FrameLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_editor_top_bar_height"
+            android:background="@drawable/photo_editor_bg_topbar">
+
+            <TextView
+                android:id="@+id/doneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/photo_editor_btn_done_margin"
+                android:padding="10dp"
+                android:text="@string/photo_editor_done"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/photo_editor_center_text_top_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/photo_editor_edit"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/photo_editor_top_title_text_size"/>
+
+            <TextView
+                android:id="@+id/applyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/photo_editor_btn_done_margin"
+                android:padding="10dp"
+                android:text="@string/photo_editor_apply"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="@dimen/photo_editor_btn_done_margin"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <dauroi.photoeditor.horizontalListView.widget.HListView
+        android:id="@+id/topListView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_option_height"
+        android:layout_below="@+id/topLayout"
+        android:background="@drawable/photo_editor_bg_top_option"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/photoViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/topListView">
+
+        <dauroi.com.imageprocessing.ImageProcessingView
+            android:id="@+id/imageProcessingView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+
+        <FrameLayout
+            android:id="@+id/normalImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/sourceImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/photo_editor_bg_action_bar"
+                android:contentDescription="@string/photo_editor"
+                android:scaleType="matrix"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/imageViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_option_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/photo_editor_bg_option_bottom"
+        android:gravity="bottom|center_horizontal">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/backLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_editor_top_bar_height"
+            android:background="@drawable/photo_editor_editor_bottombar">
+
+            <TextView
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="@dimen/photo_editor_bottom_back_button_margin"
+                android:layout_marginRight="@dimen/photo_editor_bottom_back_button_margin"
+                android:text="@string/photo_editor_back"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/photo_editor_back_text_size"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/guideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b0000000"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/firstGuideImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:drawableBottom="@drawable/photo_editor_guide_pinch_zoom"
+            android:text="@string/photo_editor_guide_zoom_image"
+            android:textColor="@android:color/white"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/secondGuideImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstGuideImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:drawableTop="@drawable/photo_editor_guide_drag"
+            android:text="@string/photo_editor_guide_drag_image"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+</RelativeLayout>

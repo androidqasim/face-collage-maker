@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/photo_editor_bg_mask"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/leftView"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/photo_editor_bg_mask"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/maskView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/rightView"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/photo_editor_bg_mask"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/photo_editor_bg_mask"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

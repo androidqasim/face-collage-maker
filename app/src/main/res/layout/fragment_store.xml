@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#897156"
+              android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_option_height"
+        android:background="@drawable/photo_editor_bg_top_option"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/backgroundFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/backgroundLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/backgroundThumbnailView"
+                        android:layout_width="@dimen/photo_editor_menu_item_size"
+                        android:layout_height="@dimen/photo_editor_menu_item_size"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/photo_editor_app_name"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_store_background_normal"/>
+
+                    <TextView
+                        android:id="@+id/backgroundNameView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/background"
+                        android:textColor="@color/photo_editor_normal_text_main_topbar"
+                        android:textSize="@dimen/photo_editor_menu_text_size"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/stickerFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/stickerLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/stickerThumbnailView"
+                        android:layout_width="@dimen/photo_editor_menu_item_size"
+                        android:layout_height="@dimen/photo_editor_menu_item_size"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/photo_editor_app_name"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_store_stickers_normal"/>
+
+                    <TextView
+                        android:id="@+id/stickerNameView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/sticker"
+                        android:textColor="@color/photo_editor_normal_text_main_topbar"
+                        android:textSize="@dimen/photo_editor_menu_text_size"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/cropFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/cropView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/cropThumbnailView"
+                        android:layout_width="@dimen/photo_editor_menu_item_size"
+                        android:layout_height="@dimen/photo_editor_menu_item_size"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/photo_editor_app_name"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/photo_editor_ic_crop_normal"/>
+
+                    <TextView
+                        android:id="@+id/cropNameView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/photo_editor_crop"
+                        android:textColor="@color/photo_editor_normal_text_main_topbar"
+                        android:textSize="@dimen/photo_editor_menu_text_size"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/frameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/frameThumbnailView"
+                        android:layout_width="@dimen/photo_editor_menu_item_size"
+                        android:layout_height="@dimen/photo_editor_menu_item_size"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/photo_editor_app_name"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/photo_editor_ic_frame_normal"/>
+
+                    <TextView
+                        android:id="@+id/frameNameView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/photo_editor_frame"
+                        android:textColor="@color/photo_editor_normal_text_main_topbar"
+                        android:textSize="@dimen/photo_editor_menu_text_size"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/effectFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/effectView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/effectThumbnailView"
+                        android:layout_width="@dimen/photo_editor_menu_item_size"
+                        android:layout_height="@dimen/photo_editor_menu_item_size"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/photo_editor_app_name"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/photo_editor_ic_effect_normal"/>
+
+                    <TextView
+                        android:id="@+id/effectNameView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="2dp"
+                        android:gravity="center_horizontal"
+                        android:text="@string/photo_editor_effect"
+                        android:textColor="@color/photo_editor_normal_text_main_topbar"
+                        android:textSize="@dimen/photo_editor_menu_text_size"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/purchaseGuideView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/photo_editor_award_remove_ads"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:scrollbars="none">
+    </ListView>
+
+</LinearLayout>

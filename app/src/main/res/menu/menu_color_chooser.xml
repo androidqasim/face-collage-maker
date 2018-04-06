@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="wisekey.photocollage.displayingbitmaps.ui.ImageGridActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_done"
+        android:icon="@drawable/ic_marked_white"
+        android:title="@string/done"
+        app:showAsAction="always"/>
+
+</menu>

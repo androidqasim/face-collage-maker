@@ -1,0 +1,221 @@
+{
+  "project_info": {
+    "project_number": "399742221558",
+    "firebase_url": "https://project-4064014482973189395.firebaseio.com",
+    "project_id": "project-4064014482973189395",
+    "storage_bucket": "project-4064014482973189395.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399742221558:android:9830b77bdb1f4f40",
+        "android_client_info": {
+          "package_name": "com.codetho.automaticcallrecorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399742221558-cn0n2cempbkof9jhujj5t65mvcn37uvn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codetho.automaticcallrecorder",
+            "certificate_hash": "3F3185474F4F514852F7676B45A172A5CD129FB5"
+          }
+        },
+        {
+          "client_id": "399742221558-9qkigo9a7dap01rtfatbovsf2n77lk4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codetho.automaticcallrecorder",
+            "certificate_hash": "2B4661BE07AE942289834906201B6EF15E3C6925"
+          }
+        },
+        {
+          "client_id": "399742221558-epen1pq7s1ap14qv2qm5p0vh2r477krb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBec7Ol27b6Us5UbcXfwuLxiJuLv0bWnTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399742221558:android:90bee180eb4ab20e",
+        "android_client_info": {
+          "package_name": "dauroi.rarzip7ziptar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399742221558-epen1pq7s1ap14qv2qm5p0vh2r477krb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBec7Ol27b6Us5UbcXfwuLxiJuLv0bWnTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399742221558:android:862e79658e97d39b",
+        "android_client_info": {
+          "package_name": "dauroi.photoeditor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399742221558-epen1pq7s1ap14qv2qm5p0vh2r477krb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBec7Ol27b6Us5UbcXfwuLxiJuLv0bWnTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399742221558:android:8f5d63272096a6e7",
+        "android_client_info": {
+          "package_name": "com.codetho.photocollage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399742221558-epen1pq7s1ap14qv2qm5p0vh2r477krb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBec7Ol27b6Us5UbcXfwuLxiJuLv0bWnTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399742221558:android:02023cdab57b4aa9",
+        "android_client_info": {
+          "package_name": "com.codetho.automaticcallrecorderpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399742221558-1m5814midss1233g336455hvfsk9j864.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codetho.automaticcallrecorderpro",
+            "certificate_hash": "3F3185474F4F514852F7676B45A172A5CD129FB5"
+          }
+        },
+        {
+          "client_id": "399742221558-epen1pq7s1ap14qv2qm5p0vh2r477krb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBec7Ol27b6Us5UbcXfwuLxiJuLv0bWnTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399742221558:android:fcb359f4a0f98873",
+        "android_client_info": {
+          "package_name": "com.codetho.photocollagepro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399742221558-epen1pq7s1ap14qv2qm5p0vh2r477krb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBec7Ol27b6Us5UbcXfwuLxiJuLv0bWnTc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

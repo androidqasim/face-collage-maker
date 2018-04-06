@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/photo_editor_bg_action_bar"
+                android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/photo_editor_top_bar_height"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/photo_editor_bg_topbar">
+
+            <ImageView
+                android:id="@+id/backView"
+                android:layout_width="@dimen/photo_editor_top_back_button_size"
+                android:layout_height="@dimen/photo_editor_top_back_button_size"
+                android:layout_marginTop="@dimen/photo_editor_btn_done_margin"
+                android:src="@drawable/photo_editor_btn_back"/>
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/photo_editor_center_text_top_margin"
+                android:gravity="center_horizontal"
+                android:text="@string/photo_editor_store_items"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/photo_editor_top_title_text_size"
+                />
+
+            <TextView
+                android:id="@+id/uninstallView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/photo_editor_btn_done_margin"
+                android:padding="10dp"
+                android:text="@string/photo_editor_uninstall"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/sampleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/itemListView"
+        android:layout_below="@+id/topLayout">
+
+        <ImageView
+            android:id="@+id/sampleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:scaleType="centerInside"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <dauroi.photoeditor.horizontalListView.widget.HListView
+        android:id="@+id/itemListView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/photo_editor_option_height"
+        android:layout_above="@+id/downloadLayout"
+        android:background="@drawable/photo_editor_bg_option_bottom"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:id="@+id/downloadLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/photo_editor_price_view_normal">
+
+        <TextView
+            android:id="@+id/downloadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/photo_editor_ic_downloaded"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/photo_editor_free"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/photo_editor_store_item_title_size"/>
+    </RelativeLayout>
+
+</RelativeLayout>

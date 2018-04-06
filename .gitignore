@@ -1,0 +1,17 @@
+local.properties
+/.idea
+/.gradle
+gradlew
+gradlew.bat
+import-summary.txt
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+.iml
+/dauroiimageprocessing/*.iml
+/*.iml
+/photoEditor/*.iml
+/app/*.iml
+/.idea/misc.xml
+/mapping
